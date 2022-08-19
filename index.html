@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        table {
+            
+            background-color: white;
+        }
+        #conta {
+            font-size: 12px;
+            color: orangered;
+            font-weight: bold;
+        }
+        #infopersonagem {
+            margin-top: 100px;
+            font-size: 12px;
+            color: orangered;
+            font-weight: bold;
+        }
+        #nickname {
+            max-width: 96px;
+        }
+        #voc {
+            max-width: 100px;
+        }
+        #city {
+            max-width: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <center id="conta">informaçoes da conta</center>
+    <center>
+        <form action="#" method="get" target="_blank">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="Login">Login</label>
+                            </td>
+                            <td>
+                                <input type="text" id="Login" name="Login">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Apelido">Apelido</label>
+                            </td>
+                            <td>
+                                <input type="text" id="Apelido" name="Apelido">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Email">Email</label>
+                            </td>
+                            <td>
+                                <input type="email" id="Email" name="Email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Password">Senha</label>
+                            </td>
+                            <td>
+                                <input type="password" id="Password" name="Password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Password">Repita a Senha</label>
+                            </td>
+                            <td>
+                                <input type="password" id="repeat" name="reapeat">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    </center>
+    <center id="infopersonagem">informaçoes do Personagem</center>
+    <center id="personagem">
+            <table>
+                <tr>
+                    <td id="nickname">
+                        <label for="NomeDoPersonagem">Nome Do Personagem</label>
+                    </td>
+                    <td>
+                        <input type="text" id="NomeDoPersonagem" name="NomeDoPersonagem">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sex">Genero</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="sex" name="sex" value="sim">
+                        masculino
+                        <input type="radio" id="sex" name="sex" value="sim">
+                        feminino
+                    </td>
+                </tr>
+                <tr>
+                    <td id="voc">
+                        <label for="Vocacao">Escolha sua vocacao</label>
+                    </td>
+                    <td>
+                        <select name="Vocacao" id="Vocacao">
+                            <optgroup label="Naruto">
+                                <option value="qualquer1">Sasuke</option>3
+                                <option value="qualquer2">Pain</option>
+                                <option value="qualquer3">Nagato</option>
+                                <option value="qualquer4">Madara</option>
+                            </optgroup>
+                            <optgroup label="Dragon Ball">
+                                <option value="db1">Bulma</option>3
+                                <option value="db2">Kuririn</option>
+                                <option value="db3">Bills</option>
+                                <option value="db4">Zeno-Sama</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="city">
+                        <label for="Cidade">Escolha sua cidade</label>
+                    </td>
+                    <td>
+                        <select name="Cidade" id="Cidade">
+                                <option value="qualquer1">Small City</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p>Ao registrar-se automaticamente você estará aceitando as regras do jogo, leia-as em Regras.</p>
+        <button type="submit">registrar-se</button> <button type="reset">Resetar</button> 
+    </center>
+</body>
+</html>
